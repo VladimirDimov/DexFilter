@@ -118,7 +118,7 @@ export class FullExampleComponent {
 
         internalThis.http
           .post<any[]>(
-            'http://localhost:5238/students/custom-orderby-example',
+            'http://localhost:5238/students/full-example',
             params.request,
             requestOptions
           )
