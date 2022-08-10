@@ -1,0 +1,20 @@
+<h1>Basic Example</h1>
+<button type="button" (click)="resetFilters()" class="btn btn-secondary">
+  Reset Filters
+</button>
+<ag-grid-angular
+  style="width: 100%; height: 500px"
+  class="ag-theme-alpine"
+  rowModelType="serverSide"
+  serverSideStoreType="partial"
+  [columnDefs]="columnDefs"
+  [defaultColDef]="defaultColDef"
+  [animateRows]="true"
+  [rowData]="rowData"
+  (gridReady)="onGridReady($event)"
+  [pagination]="true"
+  [paginationPageSize]="10"
+  [cacheBlockSize]="10"
+  multiSortKey="ctrl"
+  [gridOptions]="gridOptions"
+></ag-grid-angular>
